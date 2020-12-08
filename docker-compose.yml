@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  cart.api:
+    image: cart.api
+    build:
+      context: ./Cart.Api
+      dockerfile: Dockerfile
+    environment:
+      SERVICE_BASE_PATH: cart
